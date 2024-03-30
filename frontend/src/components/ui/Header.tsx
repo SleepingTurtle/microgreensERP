@@ -8,6 +8,7 @@ import {
     Button,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu"
+import { Link } from 'react-router-dom';
 
 
 export default function Header() {
@@ -25,7 +26,7 @@ export default function Header() {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" sx={{ flexGrow: 1 }}>
-                        Microgreens ERP
+                        <Link to="/">Microgreens ERP</Link>
                     </Typography>
                     <Button color='inherit'>Admin</Button>
                 </Toolbar>
