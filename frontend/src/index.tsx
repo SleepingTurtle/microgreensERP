@@ -10,7 +10,8 @@ import Header from './components/ui/Header';
 import Footer from './components/ui/Footer';
 import App from './App';
 import ErrorPage from './pages/ErrorPage';
-import Planting from './pages/Planting';
+import Planting from './pages/Batch';
+import CreateBatch from './pages/Batch/createBatch';
 
 function Layout() {
   return (
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/planting",
         element: <Planting />,
+      },
+      {
+        path: "/createbatch",
+        element: <CreateBatch />,
       },
     ]
   },

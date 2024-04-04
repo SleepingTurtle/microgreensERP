@@ -1,5 +1,5 @@
 export default function ErrorPage() {
     return(
-        <h1>Your not where you should be</h1>
+        <h1>You're not where you should be</h1>
     )
 }

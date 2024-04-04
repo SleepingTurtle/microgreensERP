@@ -1,8 +1,8 @@
 import * as React from 'react'
+import { Link } from 'react-router-dom';
 import {
     Container,
     Button,
-    Link,
     Stack,
     TableContainer,
     Table,
@@ -34,7 +34,7 @@ export default function Planting() {
         <Container>
             <Stack direction='row'>
                 <h2>Planting</h2>.
-                <Button><Link>Create Batch</Link></Button>
+                <Button><Link to="/createbatch">Create Batch</Link></Button>
             </Stack>
             <TableContainer>
                 <Table aria-label='simple table'>
@@ -49,7 +49,7 @@ export default function Planting() {
                     <TableBody>
                         {rows.map((row) => (
                             <TableRow key={row.batchId}>
-                                <TableCell><Link>{row.batchId}</Link></TableCell>
+                                <TableCell><Link to="">{row.batchId}</Link></TableCell>
                                 <TableCell>{row.plantedSeed}</TableCell>
                                 <TableCell>{row.plantedStatus}</TableCell>
                                 <TableCell>{row.plantedDate.toString()}</TableCell>
