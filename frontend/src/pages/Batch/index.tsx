@@ -35,6 +35,7 @@ export default function Planting() {
             <Stack direction='row'>
                 <h2>Planting</h2>.
                 <Button><Link to="/createbatch">Create Batch</Link></Button>
+                <Button><Link to="/createseed">Create Seed</Link></Button>
             </Stack>
             <TableContainer>
                 <Table aria-label='simple table'>

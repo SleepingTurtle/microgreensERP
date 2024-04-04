@@ -5,7 +5,14 @@ import {
     Container, 
     MenuItem, 
     TextField,
+    Typography,
 } from '@mui/material'
+
+import { BatchFormData } from '../../interfaces'
+
+interface BatchFormProps {
+    onSubmit: (formData: BatchFormData) => void
+}
 
 const CreateBatchForm = () => {
     const [seedType, setSeedType] = useState('')
@@ -17,7 +24,7 @@ const CreateBatchForm = () => {
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
-        console.log('Form submitted:', {seedType, batchWeight, traysAmount})
+        //onSubmit({seedType, batchWeight, traysAmount})
         setSeedType('')
         setBatchWeight(0)
         setTraysAmount(0)
@@ -29,7 +36,7 @@ const CreateBatchForm = () => {
 
     return (
         <Container>
-            <h1>Create Batch</h1>
+            <Typography variant='h5' gutterBottom>Create New Batch</Typography>
             <Form onSubmit={handleSubmit}>
                 <TextField
                     select

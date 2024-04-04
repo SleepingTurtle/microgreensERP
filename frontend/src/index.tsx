@@ -11,7 +11,8 @@ import Footer from './components/ui/Footer';
 import App from './App';
 import ErrorPage from './pages/ErrorPage';
 import Planting from './pages/Batch';
-import CreateBatch from './pages/Batch/createBatch';
+import CreateBatchForm from './pages/Batch/createBatch';
+import CreateSeedForm from './pages/Batch/createSeed';
 
 function Layout() {
   return (
@@ -39,7 +40,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/createbatch",
-        element: <CreateBatch />,
+        element: <CreateBatchForm />,
+      },
+      {
+        path: "/createseed",
+        element: <CreateSeedForm />,
       },
     ]
   },
