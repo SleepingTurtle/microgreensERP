@@ -10,7 +10,7 @@ import Header from './components/ui/Header';
 import Footer from './components/ui/Footer';
 import App from './App';
 import ErrorPage from './pages/ErrorPage';
-import Planting from './pages/Batch';
+import Growing from './pages/Batch';
 import CreateBatchForm from './pages/Batch/createBatch';
 import CreateSeedForm from './pages/Batch/createSeed';
 
@@ -35,8 +35,8 @@ const router = createBrowserRouter([
         element: <App />,
       },
       {
-        path: "/planting",
-        element: <Planting />,
+        path: "/growing",
+        element: <Growing />,
       },
       {
         path: "/createbatch",

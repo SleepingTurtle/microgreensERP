@@ -3,3 +3,8 @@ export interface BatchFormData {
   batchWeight: number;
   traysAmount: number;
 }
+
+export interface SeedFormData {
+    seedType: string;
+    startWeight: number;
+}

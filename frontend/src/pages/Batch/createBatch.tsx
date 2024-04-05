@@ -31,7 +31,7 @@ const CreateBatchForm = () => {
     }
 
     const handleCancel = () => {
-        navigate('/planting')
+        navigate('/growing')
     }
 
     return (
