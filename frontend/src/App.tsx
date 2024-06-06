@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 function App() {
   return (
     <Container>
-      <h1>HomePage</h1>
+      <h1>Home Page</h1>
       <Button><Link to="/growing">Planting</Link></Button>
     </Container>
   );
